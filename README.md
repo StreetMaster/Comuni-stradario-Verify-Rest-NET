@@ -2,6 +2,7 @@
 Demo .NET per l'utilizzo del ws rest VERIFY FREE di verifica e normalizzazione indirizzi italiani di StreetMaster
 
 Il progetto è sviluppato in C# - Framework 4.6.1
+
 Il protocollo di comunicazione e' in formato JSON e viene utilizzata la libreria opensource RestSharp (http://restsharp.org/)
 
 End point del servizio 
