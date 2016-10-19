@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace VerifyRest_NET
 {
-  
+  /// <summary>
+  /// Classe per deserializzazione della risposta JSON del servizio VERIFY
+  /// </summary>
     class DetailElem
     {
         public string Regione { get; set; }

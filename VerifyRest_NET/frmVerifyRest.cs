@@ -40,7 +40,6 @@ namespace VerifyRest_NET
             Cursor = Cursors.WaitCursor;
             Application.DoEvents();
 
-
             // inizializzazione client del servizio VERIFY
             var clientVerify = new RestSharp.RestClient();
             clientVerify.BaseUrl = new Uri("http://ec2-46-137-97-173.eu-west-1.compute.amazonaws.com");
@@ -49,7 +48,7 @@ namespace VerifyRest_NET
             request.RequestFormat = DataFormat.Json;
 
             // valorizzazione input
-            // per l'esempio sono ut
+            // per l'esempio viene valorizzato un insieme minimo dei parametri
             request.AddParameter("Key", txtKey.Text);
             request.AddParameter("Localita", txtInComune.Text);
             request.AddParameter("Cap", txtInCap.Text);
