@@ -10,7 +10,7 @@ namespace VerifyRest_NET
     /// realizzato da StreetMaster Italia
     /// 
     /// L'end point del servizio è 
-    ///     http://ec2-46-137-97-173.eu-west-1.compute.amazonaws.com/smrest/verify
+    ///     http://ec2-46-137-97-173.eu-west-1.compute.amazonaws.com/smrest/webresources/verify
     ///     
     /// Per l'utilizzo registrarsi sul sito http://streetmaster.it e richiedere la chiave per il servizio VERIFY 
     /// Il protocollo di comunicazione e' in formato JSON
