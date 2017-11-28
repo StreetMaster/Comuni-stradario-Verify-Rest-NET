@@ -1,6 +1,6 @@
-# Webservice di verifica e correzione dei comuni e indirizzi italiani
+# Comuni italiani e stradario. Webservice di verifica e correzione
 ## Demo Verify Rest NET
-Demo .NET per l'utilizzo del ws rest VERIFY di verifica e correzione dei comuni e indirizzi italiani. Il servizio è gratuito per 250 chiamate mensili.
+Comuni italiani e stradario. Demo .NET per l'utilizzo del ws rest VERIFY. Il servizio è gratuito per 250 chiamate mensili.
 
 ### Ambiente di sviluppo:
   - C#
