@@ -10,7 +10,7 @@ namespace VerifyRest_NET
     /// realizzato da StreetMaster Italia
     /// 
     /// L'end point del servizio è 
-    ///     http://ec2-46-137-97-173.eu-west-1.compute.amazonaws.com/smrest/webresources/verify
+    ///     https://streetmaster.streetmaster.it/smrest/webresources/verify
     ///     
     /// Per l'utilizzo registrarsi sul sito http://streetmaster.it e richiedere la chiave per il servizio VERIFY 
     /// Il protocollo di comunicazione e' in formato JSON
@@ -41,11 +41,15 @@ namespace VerifyRest_NET
             Application.DoEvents();
 
             // inizializzazione client del servizio VERIFY
-            var clientVerify = new RestSharp.RestClient();
-            clientVerify.BaseUrl = new Uri("http://ec2-46-137-97-173.eu-west-1.compute.amazonaws.com");
+            var clientVerify = new RestSharp.RestClient
+            {
+                BaseUrl = new Uri("https://streetmaster.streetmaster.it")
+            };
 
-            var request = new RestRequest("smrest/webresources/verify", Method.GET);
-            request.RequestFormat = DataFormat.Json;
+            var request = new RestRequest("smrest/webresources/verify", Method.GET)
+            {
+                RequestFormat = DataFormat.Json
+            };
 
             // valorizzazione input
             // per l'esempio viene valorizzato un insieme minimo dei parametri
